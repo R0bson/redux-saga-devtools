@@ -32,7 +32,7 @@ class EffectList extends React.Component {
   }
 
   isCollapsed = effectId => {
-    return this.state.collapsedEffects[effectId]
+    return this.state.collapsedEffects[effectId] || false
   }
 
   collapseEffect = (effectId, collapsed) => {
